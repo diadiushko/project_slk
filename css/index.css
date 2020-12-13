@@ -202,7 +202,7 @@ section {
   position: relative;
   width: 100%;
   background: linear-gradient(to bottom, #9913bb, #4a0c7a, #1f1a5a);
-  transition: all linear .15s;
+  transition: all linear .2s;
 }
 
 .image_block:hover .image_container {
@@ -277,10 +277,14 @@ section {
 }
 
 /* second section */
+#second_section{
+  height: 1000px;
+  max-height: none;
+}
 .offer_panel {
   display: grid;
   grid-template: 66% 33%/ 1fr 1fr 1fr;
-  margin: 100px 0 35px;
+  margin: 100px 0 75px;
 }
 
 .offer_block {
