@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* general */
+:root {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+  --button-hover-color: rgb(196, 68, 194);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
+
+/* header */
+body header {
+  margin: auto;
+  height: 100vh;
+  max-height: 940px;
+  min-height: 840px;
+  max-width: 1920px;
+  background: url("A:/Atom/SLK/img/index/header.jpg") no-repeat;
+  background-size: cover;
+}
+
+.inner_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+/* nav */
+.burger_menu button {
+  font-size: 48px;
+  background: none;
+  transition: color .1s linear;
+  display: none;
+}
+
+.burger_menu button:hover {
+  cursor: pointer;
+  color: rgb(46, 17, 107);
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: all .1s linear;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* intro */
+.intro {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.intro_title h2 {
+  font-size: 96px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.intro_title h2:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 450px;
+  background: black;
+  margin: 30px auto 0;
+  ;
+}
+
+.intro_title h1 {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+/* intro buttons */
+.intro_buttons {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.intro_buttons button {
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  width: 300px;
+  padding: 7.5px 0;
+  border-radius: 40px;
+}
+
+.signup_button {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  transition: .1s linear;
+  background: none;
+  border: 5px solid black;
+}
+
+.signup_button:hover {
+  background: var(--button-hover-color);
+  border: var(--button-hover-color);
+  color: white;
+  cursor: pointer;
+}
+
+.login_button {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  transition: .1s linear;
+  background: #2c0948;
+  border: 5px solid #2c0948;
+  color: white;
+}
+
+.login_button:hover {
+  background: var(--button-hover-color);
+  border: var(--button-hover-color);
+  color: white;
+  cursor: pointer;
+}
+
+/* first section */
+section {
+  min-height: 940px;
+  max-height: 980px;
+}
+
+.section_title {
+  padding-top: 75px;
+  text-align: center;
+}
+
+.section_title h3 {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+}
+
+.section_title h3:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 230px;
+  margin: 20px auto 0;
+  border-radius: 20px;
+  background: #d42e2e;
+}
+
+.section_title p {
+  margin-top: 70px;
+}
+
+/* section images */
+.section_images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  padding-bottom: 75px;
+}
+
+.image_block {
+  width: 30%;
+  background: #0a0938;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom, #9913bb, #4a0c7a, #1f1a5a);
+  transition: all linear .15s;
+}
+
+.image_block:hover .image_container {
+  transform: translate(-10%, -10%)
+}
+
+.image_container span {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: all linear .15s;
+}
+
+.image_container img {
+  width: 100%;
+  display: block;
+  transition: all linear .15s;
+}
+
+.image_block:hover img {
+  opacity: .25;
+  filter: blur(1px);
+}
+
+.image_block:hover span {
+  opacity: 1;
+}
+
+/* statistics */
+.statistics {
+  background: linear-gradient(to right, #100528, #250b37, #3a0b42);
+  max-width: 1920px;
+  margin: auto;
+}
+
+.statistics_panel {
+  display: flex;
+}
+
+.stat_block {
+  flex: 1 1 0;
+  color: white;
+}
+
+.stat_desc {
+  text-align: center;
+  padding: 20px 0;
+  border-left: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+.statistics_panel:last-child {
+  border-right: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+.stat_desc p {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.stat_block h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* second section */
+.offer_panel {
+  display: grid;
+  grid-template: 66% 33%/ 1fr 1fr 1fr;
+  margin: 100px 0 35px;
+}
+
+.offer_block {
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.offer_block img {
+  position: absolute;
+  width: 100px;
+}
+
+.offer_block h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding: 32px 0 0 120px;
+}
+
+.offer_block p {
+  font-size: 16px;
+  padding: 10px 0 0 122px;
+}
+
+/* offer button */
+.offer_button {
+  display: block;
+  width: 700px;
+  margin: auto;
+  padding: 20px 0;
+  border-radius: 12px;
+  background: #be4444;
+  color: white;
+  text-align: center;
+  transition: linear .1s;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+.offer_button:hover {
+  background: #6f1111;
+}
+
+/* footer */
+#footer {
+  background: linear-gradient(to right, #100528, #250b37, #3a0b42);
+  max-width: 1920px;
+  margin: auto;
+}
+
+.discord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.discord a {
+  margin-left: 15px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5))
+}
+
+.discord span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+
+.discord img {
+  transition: .1s linear;
+}
+
+.discord img:hover {
+  transform: translate(-4px, -4px);
+}
