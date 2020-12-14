@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* general */
+:root {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+  --button-hover-color: rgb(196, 68, 194);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
+
+button {
+  background: transparent;
+}
+
+/* inner header */
+.main {
+  height: 100vh;
+  min-height: 880px;
+  max-width: 1920px;
+  margin: auto;
+  background: url("A:/Atom/project_slk/img/faq/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+.inner_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: all .1s linear;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.burger_menu button {
+  font-size: 60px;
+  background: none;
+  transition: color .1s linear;
+  display: none;
+}
+
+.burger_menu button:hover {
+  cursor: pointer;
+  color: rgb(46, 17, 107);
+}
+
+/* faq panel */
+.faq_title {
+  font-size: 96px;
+  font-weight: 400;
+  font-family: "Kaushan Script", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.faq_panel {
+  /* display: grid;
+  grid-template: repeat(4,1fr)/ 100% */
+  margin-top: 60px;
+}
+
+.faq_block {}
+
+.faq_block button {
+  display: block;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0 15px 15px;
+  transition: linear .1s;
+}
+
+.faq_block button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  color: white;
+}
+
+.answer {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  padding: 15px 0 15px 15px;
+  display: block;
+  border-left: 3px solid black;
+  margin-left: 20px;
+  display: none;
+  overflow: hidden;
+}

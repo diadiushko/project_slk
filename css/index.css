@@ -331,7 +331,7 @@ section {
   padding-bottom: 30px;
 }
 
-.offer_button a:hover  {
+.offer_button a:hover {
   background: #6f1111;
 }
 
@@ -367,4 +367,371 @@ section {
 
 .discord img:hover {
   transform: translate(-4px, -4px);
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+
+  /* first section */
+  section {
+    max-height: auto;
+    min-height: auto;
+  }
+
+  .section_title p {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .section_title h3 {
+    font-size: 84px;
+  }
+
+  .section_title h3:after {
+    width: 150px;
+  }
+
+  .image_container span {
+    font-size: 40px;
+  }
+
+  .section_title {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+
+  /* header */
+  body header {
+    max-height: 780px;
+    min-height: 740px;
+  }
+
+  .intro_title h2 {
+    font-size: 72px;
+  }
+
+  .intro_title h1 {
+    font-size: 42px;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .intro {
+    margin-top: 45px;
+  }
+
+  .intro_title h2:after {
+    height: 4px;
+    width: 300px;
+    margin top: 30px;
+  }
+
+  .intro_title h1 {
+    margin-top: 30px;
+  }
+
+  /* first section */
+  .section_title p {
+    font-size: 26px;
+  }
+
+  .section_images {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .image_container span {
+    font-size: 30px;
+  }
+
+  /* statistics */
+  .stat_desc p {
+    font-size: 54px;
+  }
+
+  .stat_block h2 {
+    font-size: 28px;
+  }
+
+  /* second section */
+  .offer_panel {
+    grid-template: 1fr 1fr 1fr / 50% 50%;
+  }
+
+  .offer_block {
+    margin-bottom: 30px;
+  }
+
+  .offer_panel {
+    margin: 35px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  /* header */
+  body header .intro_title h2 {
+    font-size: 52px;
+  }
+
+  .intro_title h1 {
+    font-size: 30px;
+  }
+
+  .intro_title h2:after {
+    width: 200px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger_menu button {
+    display: block;
+  }
+
+  .intro_buttons {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+
+  .intro_buttons button {
+    margin-top: 30px;
+    width: 500px;
+  }
+
+  /* first section */
+  .section_title p {
+    font-size: 19px;
+    margin-top: 25px;
+  }
+
+  .image_container span {
+    font-size: 20px;
+  }
+
+  .section_title h3 {
+    font-size: 72px;
+  }
+
+  .section_title h3:after {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .section_images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_block {
+    border-radius: 100px;
+    margin-bottom: 15px;
+  }
+
+  .image_container {
+    border-radius: 100px;
+  }
+
+  .image_block:hover .image_container {
+    transform: none;
+  }
+
+  .section_images .image_block:last-child {
+    margin: 0;
+  }
+
+  .image_container img {
+    border-radius: 100px;
+  }
+
+  .image_block img {
+    opacity: .25;
+    filter: blur(1px);
+  }
+
+  .image_block span {
+    opacity: 1;
+  }
+
+  /* statistics */
+  .statistics>div {
+    width: 100%;
+  }
+
+  .stat_desc p {
+    font-size: 40px;
+  }
+
+  .stat_block h2 {
+    font-size: 20px;
+  }
+
+  .statistics_panel .stat_block:first-child {
+    border-left: none;
+  }
+
+  .statistics_panel .stat_block:last-child {
+    border-right: none;
+  }
+
+  /* second section */
+  .offer_panel {
+    grid-template: repeat(6, 1fr) / 100%;
+  }
+
+  .offer_block {
+    margin-bottom: 10px;
+  }
+
+  .offer_button a {
+    width: 540px;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+  .discord span {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* header */
+  body header {
+    max-height: 610px;
+    min-height: 580px;
+  }
+
+  .intro_buttons button {
+    width: 220px;
+    font-size: 32px;
+  }
+
+  body header .intro_title h2 {
+    font-size: 28px;
+  }
+
+  .logo a img {
+    width: 80px;
+  }
+
+  .intro_title h1 {
+    font-size: 17px;
+  }
+
+  .intro_title h2:after {
+    width: 150px;
+  }
+
+  .intro_buttons button {}
+
+  /* first section */
+  .section_title p {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .image_container span {
+    font-size: 11px;
+  }
+
+  .section_title h3 {
+    font-size: 52px;
+  }
+
+  .section_title p {
+    line-height: 150%;
+    font-size: 3.25vw;
+  }
+
+  .section_title h3:after {
+    width: 120px;
+    height: 3px;
+    margin: 5px auto;
+  }
+
+  .section_images {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  /* statistics */
+  .statistics>div {
+    padding: 0;
+  }
+
+  .stat_block h2 {
+    font-size: 12px;
+  }
+
+  .stat_block p {
+    font-size: 24px;
+  }
+
+  /* second section */
+  .section_title h3 {
+    font-size: 12vw;
+  }
+
+  .section_title h3:after {
+    width: 80px;
+  }
+
+  .offer_block h2 {
+    font-size: 6vw;
+    padding: 25px 0 0 100px;
+  }
+
+  .offer_block p {
+    font-size: 3.3vw;
+    padding: 10px 0 0 100px;
+  }
+
+  .offer_block img {
+    width: 75px;
+  }
+
+  .offer_button a {
+    width: 250px;
+    font-size: 24px;
+  }
+
+  /* footer */
+  .discord {
+    padding: 5px 0;
+  }
+
+  .discord span {
+    font-size: 14px;
+  }
+
+  .discord img {
+    width: 50px;
+  }
 }
