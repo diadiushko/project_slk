@@ -279,7 +279,6 @@ section {
 
 /* second section */
 #second_section {
-  height: 1000px;
   max-height: none;
 }
 
@@ -312,7 +311,7 @@ section {
 }
 
 /* offer button */
-.offer_button {
+.offer_button a {
   display: block;
   width: 700px;
   margin: auto;
@@ -325,6 +324,11 @@ section {
   font-size: 72px;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
+}
+
+.offer_button {
+  display: block;
+  padding-bottom: 30px;
 }
 
 .offer_button:hover {
