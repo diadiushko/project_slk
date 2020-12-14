@@ -169,6 +169,7 @@ section {
   font-family: "Kaushan Script", sans-serif;
   font-size: 96px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .section_title h3:after {

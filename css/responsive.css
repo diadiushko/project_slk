@@ -243,7 +243,7 @@ section:not(#first_section), footer {
   }
 
   .intro_title h2:after {
-    width: 200px;
+    width: 150px;
   }
 
   .intro_buttons button {}
@@ -260,6 +260,10 @@ section:not(#first_section), footer {
 
   .section_title h3 {
     font-size: 52px;
+  }
+  .section_title p {
+    line-height: 150%;
+    font-size: 3.25vw;
   }
 
   .section_title h3:after {
