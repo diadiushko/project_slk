@@ -331,7 +331,7 @@ section {
   padding-bottom: 30px;
 }
 
-.offer_button:hover {
+.offer_button a:hover  {
   background: #6f1111;
 }
 
