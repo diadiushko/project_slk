@@ -23,7 +23,7 @@ body header {
   margin: auto;
   height: 100vh;
   max-height: 940px;
-  min-height: 840px;
+  min-height: 880px;
   max-width: 1920px;
   background: url("https://fluxick.github.io/SLK/img/index/header.jpg") no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@ body header {
 
 /* nav */
 .burger_menu button {
-  font-size: 48px;
+  font-size: 60px;
   background: none;
   transition: color .1s linear;
   display: none;
@@ -134,7 +134,7 @@ nav a:hover {
 
 .signup_button:hover {
   background: var(--button-hover-color);
-  border: var(--button-hover-color);
+  border: 5px solid var(--button-hover-color);
   color: white;
   cursor: pointer;
 }
@@ -149,7 +149,7 @@ nav a:hover {
 
 .login_button:hover {
   background: var(--button-hover-color);
-  border: var(--button-hover-color);
+  border: 5px solid var(--button-hover-color);
   color: white;
   cursor: pointer;
 }
@@ -254,15 +254,15 @@ section {
 .stat_block {
   flex: 1 1 0;
   color: white;
+  border-left: 5px solid rgba(0, 0, 0, 0.4);
 }
 
 .stat_desc {
   text-align: center;
   padding: 20px 0;
-  border-left: 5px solid rgba(0, 0, 0, 0.4);
 }
 
-.statistics_panel:last-child {
+.statistics_panel .stat_block:last-child {
   border-right: 5px solid rgba(0, 0, 0, 0.4);
 }
 
@@ -277,10 +277,11 @@ section {
 }
 
 /* second section */
-#second_section{
+#second_section {
   height: 1000px;
   max-height: none;
 }
+
 .offer_panel {
   display: grid;
   grid-template: 66% 33%/ 1fr 1fr 1fr;
