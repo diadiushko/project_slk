@@ -146,7 +146,7 @@ nav a:hover {
 
   .faq_title {
     font-size: 68px;
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
 }
 
@@ -210,5 +210,9 @@ nav a:hover {
 
   .faq_block button {
     font-size: 5.4vw;
+    padding: 10px 0 10px 10px;
+  }
+  .faq_title{
+    font-size: 56px;
   }
 }
