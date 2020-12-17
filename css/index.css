@@ -98,7 +98,6 @@ nav a:hover {
   width: 450px;
   background: black;
   margin: 30px auto 0;
-  ;
 }
 
 .intro_title h1 {
@@ -648,8 +647,6 @@ section {
   .intro_title h2:after {
     width: 150px;
   }
-
-  .intro_buttons button {}
 
   /* first section */
   .section_title p {
