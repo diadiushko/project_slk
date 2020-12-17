@@ -66,6 +66,11 @@ body header {
   color: rgb(46, 17, 107);
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   font-size: 24px;
   font-weight: 600;
