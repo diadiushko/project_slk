@@ -579,6 +579,11 @@ section {
   }
 
   /* header */
+  body header {
+    min-height: 820px;
+    max-height: 860px;
+  }
+
   body header .intro_title h2 {
     font-size: 52px;
   }
@@ -723,8 +728,8 @@ section {
 
   /* header */
   body header {
-    max-height: 610px;
-    min-height: 580px;
+    min-height: 640px;
+    max-height: 650px;
   }
 
   .intro_buttons button {
