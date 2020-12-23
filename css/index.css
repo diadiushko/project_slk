@@ -18,6 +18,9 @@ a {
   color: black;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 /* header */
 body header {
   margin: auto;
@@ -144,6 +147,10 @@ body header {
   font-weight: 600;
   margin-left: 25px;
   transition: all .1s linear;
+}
+
+.hamb_nav :last-child {
+  margin-top: 10px;
 }
 
 .hamb_nav a:hover {
