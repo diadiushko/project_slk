@@ -164,9 +164,22 @@ nav a:hover {
     width: 960px;
   }
 
+  .faq_quest {
+    font-size: 36px;
+  }
+
+  .faq_block.active .answer {
+    height: 130px;
+  }
+
   .faq_title {
     font-size: 68px;
-    margin-top: 10vh;
+    margin-top: 5vh;
+  }
+
+  .answer {
+    font-size: 21px;
+    line-height: 1.5;
   }
 }
 
@@ -189,6 +202,11 @@ nav a:hover {
 
   .faq_quest::before {
     display: none;
+  }
+
+  .faq_block.active .answer {
+    height: 100px;
+    padding-top: 5px;
   }
 }
 
@@ -220,6 +238,11 @@ nav a:hover {
   .faq_quest {
     font-size: 32px;
   }
+
+  .answer {
+    font-size: 15px;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -239,5 +262,15 @@ nav a:hover {
 
   .faq_title {
     font-size: 56px;
+  }
+
+  .faq_block.active .answer {
+    height: 120px;
+    padding-top: 10px;
+  }
+
+  .answer {
+    font-size: 11px;
+    line-height: 1.5;
   }
 }
