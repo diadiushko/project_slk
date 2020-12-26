@@ -536,7 +536,7 @@ section {
   .intro_title h2:after {
     height: 4px;
     width: 300px;
-    margin top: 30px;
+    margin-top: 30px;
   }
 
   .intro_title h1 {

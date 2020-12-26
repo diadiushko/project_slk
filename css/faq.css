@@ -100,9 +100,8 @@ nav a:hover {
   margin-top: 60px;
 }
 
-.faq_block {}
-
-.faq_block button {
+.faq_quest {
+  position: relative;
   display: block;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
@@ -110,10 +109,22 @@ nav a:hover {
   width: 100%;
   text-align: left;
   padding: 15px 0 15px 15px;
-  transition: linear .1s;
 }
 
-.faq_block button:hover {
+.faq_quest::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 16px;
+  font-size: 48px;
+}
+
+.faq_block.active .faq_quest::before {
+  content: "-";
+}
+
+.faq_block .faq_quest:hover {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
@@ -124,13 +135,22 @@ nav a:hover {
   font-weight: 600;
   font-size: 24px;
   color: white;
-  padding: 15px 0 15px 15px;
-  display: block;
   border-left: 3px solid black;
-  margin-left: 20px;
-  display: none;
+  border-radius: 5px;
+  cursor: default;
+  position: relative;
+  height: 0;
   overflow: hidden;
+  padding-left: 15px;
+  margin-left: 25px;
+  transition: height .5s ease-in-out, padding-top .5s ease-in-out;
 }
+
+.faq_block.active .answer {
+  height: 5em;
+  padding-top: 20px;
+}
+
 
 /* responsive */
 @media screen and (max-width: 1200px) {
@@ -155,7 +175,7 @@ nav a:hover {
     width: 720px;
   }
 
-  .faq_block button {
+  .faq_quest {
     font-size: 42px;
   }
 
@@ -165,6 +185,10 @@ nav a:hover {
 
   .faq_panel {
     margin-top: 45px;
+  }
+
+  .faq_quest::before {
+    display: none;
   }
 }
 
@@ -193,7 +217,7 @@ nav a:hover {
     display: block;
   }
 
-  .faq_block button {
+  .faq_quest {
     font-size: 32px;
   }
 }
@@ -208,7 +232,7 @@ nav a:hover {
     width: 80px;
   }
 
-  .faq_block button {
+  .faq_quest {
     font-size: 5.4vw;
     padding: 10px 0 10px 10px;
   }

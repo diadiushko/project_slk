@@ -1,4 +1,4 @@
-document.querySelector('.burger_menu').addEventListener('click', function(e) {
+document.querySelector('.burger_menu').addEventListener('click', function (e) {
   e.preventDefault();
   // this.classList.toggle('active');
   if (this.classList.contains('active')) {
