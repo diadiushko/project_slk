@@ -117,14 +117,21 @@ nav a:hover {
   top: 50%;
   transform: translate(0, -50%);
   right: 16px;
-  font-size: 48px;
+  font-size: 56px;
+  visibility: hidden;
+}
+.faq_quest:hover::before{
+  visibility: visible;
 }
 
 .faq_block.active .faq_quest::before {
   content: "-";
 }
+.faq_block.active .faq_quest:hover::before{
+  visibility: visible;
+}
 
-.faq_block .faq_quest:hover {
+.faq_quest:hover {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
