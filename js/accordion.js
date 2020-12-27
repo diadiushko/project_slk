@@ -1,6 +1,5 @@
 const accordions = document.querySelectorAll('.faq_block')
 
-
 for (const block of accordions) {
     block.addEventListener('click', function () {
         if (block.classList.contains('active')) {
