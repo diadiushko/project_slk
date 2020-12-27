@@ -18,9 +18,10 @@ a {
   color: black;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 /* header */
 body header {
   margin: auto;
@@ -83,7 +84,8 @@ body header {
   background: black;
 }
 
-.burger_menu span:before, .burger_menu span:after {
+.burger_menu span:before,
+.burger_menu span:after {
   position: absolute;
   display: block;
   left: 0;
@@ -105,7 +107,8 @@ body header {
   transition: background 0s .3s;
 }
 
-.burger_menu_line span:before, .burger_menu_line span:after {
+.burger_menu_line span:before,
+.burger_menu_line span:after {
   transition-duration: .3s, .3s;
   transition-delay: .3s, 0s;
 }
@@ -132,7 +135,8 @@ body header {
   transform: rotate(-45deg);
 }
 
-.burger_menu_line.active span:before, .burger_menu_line.active span:after {
+.burger_menu_line.active span:before,
+.burger_menu_line.active span:after {
   transition-delay: 0s, .3s;
 }
 
