@@ -179,10 +179,12 @@
     .catalog_title button {
         margin-top: 20px;
     }
+
     .catalog_item>img {
         width: 200px;
     }
-    .catalog{
+
+    .catalog {
         margin-top: 15px;
     }
 }

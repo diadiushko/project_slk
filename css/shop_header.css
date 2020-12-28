@@ -275,6 +275,10 @@ nav {
     min-height: 195px;
   }
 
+  .cart {
+    padding: 10px;
+  }
+
   .shop_circle {
     display: none;
   }
@@ -299,6 +303,7 @@ nav {
   .logo img {
     height: 75px;
   }
+
   .account {
     display: none;
   }
