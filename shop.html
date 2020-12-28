@@ -7,12 +7,147 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Artem Dyadyushko">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/shop_header.css">
+  <link rel="stylesheet" href="css/shop_catalog.css">
   <title>SLK - ARK Shop</title>
 </head>
 
 <body>
-  
+  <header>
+    <div class="container">
+      <div class="inner_header">
+
+        <div class="logo">
+          <a href="index.html"><img src="img/shop/logo.svg" alt="Logotype"></a>
+          <h1>SLK Shop</h1>
+        </div>
+
+        <nav>
+
+          <button class="cart">
+            <img src="img/shop/cart.svg" alt="Cart">
+            <div class="cart_count"></div>
+          </button>
+
+          <button class="account">
+            <img src="img/shop/account.svg" alt="Person">
+          </button>
+
+        </nav>
+
+      </div> <!-- inner_header -->
+
+      <div class="intro">
+        <h2>What did you come for?</h2>
+        <div class="shop_circle">
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/bosses.svg" alt="Spider head">
+              </a>
+            </button>
+            <span>Bosses</span>
+
+          </div>
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/gear.svg" alt="Helmet">
+              </a>
+            </button>
+            <span>Gear</span>
+
+          </div>
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/consumables.svg" alt="Soup">
+              </a>
+            </button>
+            <span>Consumables</span>
+
+          </div>
+
+          <div class="circle_item">
+            <span class="central_title">Choose<br>your&nbsp;way</span>
+          </div>
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/structures.svg" alt="Foundation">
+              </a>
+            </button>
+            <span>Structures</span>
+
+          </div>
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/dinos.svg" alt="Saddle">
+              </a>
+            </button>
+            <span>Dinos</span>
+
+          </div>
+
+          <div class="circle_item">
+
+            <button type="button" class="circle_img">
+              <a href="#catalog">
+                <img src="img/shop/special.svg" alt="Rifle">
+              </a>
+            </button>
+            <span>Special</span>
+
+          </div>
+
+        </div> <!-- shop_circle -->
+      </div> <!-- intro -->
+  </header>
+
+  <section id="catalog">
+
+    <div class="container">
+
+      <div class="catalog_title">
+
+        <button>
+          <img src="img/shop/left_arrow.svg" alt="Left arrow">
+        </button>
+
+        <span>Dinosaurs</span>
+
+        <button>
+          <img src="img/shop/right_arrow.svg" alt="Right arrow">
+        </button>
+
+      </div> <!-- catalog_title -->
+
+      <div class="fitler">
+
+        <button>flyers</button>
+        <button>soaker</button>
+        <button>DPS</button>
+        <button>water</button>
+
+      </div>
+
+      <div class="catalog">
+
+      </div> <!-- catalog -->
+    </div> <!-- container -->
+  </section>
+  <script src="js/catalogFill.js"></script>
 </body>
 
 </html>

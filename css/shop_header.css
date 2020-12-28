@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* general */
+:root {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+  --button-hover-color: rgb(196, 68, 194);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header */
+body header {
+  margin: auto;
+  height: 100vh;
+  max-height: 940px;
+  min-height: 880px;
+  max-width: 1920px;
+  background: url("A:/Atom/project_slk/img/shop/background.jpg");
+  background-size: cover;
+}
+
+.inner_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.logo h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account {
+  background: none;
+  cursor: pointer;
+  margin-left: 15px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  transition: .1s ease-in-out;
+}
+
+.account:hover {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* cart */
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.cart_count:after {
+  position: absolute;
+  content: '3';
+  color: #FF0000;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  background: white;
+  padding: 1px 6px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cart:after {
+  content: '19.11$';
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 32px;
+  padding-left: 5px;
+}
+
+.cart img {
+  transition: 0.3s linear;
+}
+
+.cart:hover img {
+  animation: shake .8s linear both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+/* shop circle */
+.intro {
+  max-width: 700px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+}
+
+.shop_circle {
+  display: grid;
+  grid-template: repeat(20, 5%) / repeat(3, 1fr);
+}
+
+.circle_item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.circle_item:nth-child(1) {
+  grid-area: 12 / 1 / 16 / 2;
+}
+
+.circle_item:nth-child(2) {
+  grid-area: 5 / 1 / 10 / 2;
+}
+
+.circle_item:nth-child(3) {
+  grid-area: 1 / 2 / 4 / 3;
+}
+
+.circle_item:nth-child(4) {
+  grid-area: 8 / 2 / 15 / 3;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin: 0;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5))
+}
+
+.circle_item:nth-child(5) {
+  grid-area: 15 / 2 / 20 / 3;
+}
+
+.circle_item:nth-child(6) {
+  grid-area: 12 / 3 / 16 / 4;
+}
+
+.circle_item:nth-child(7) {
+  grid-area: 5 / 3 / 10 / 4;
+}
+
+.circle_item>span:not(.central_title) {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.central_title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.circle_img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  transition: .15s linear;
+}
+
+.circle_img:hover {
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.5))
+}

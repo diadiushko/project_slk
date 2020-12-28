@@ -267,9 +267,9 @@ nav a:hover {
 .wrapper {
   position: absolute;
   z-index: 100;
-  height: 100vh;
+  height: 100%;
   max-height: 940px;
-  width: 100vw;
+  width: 100%;
   max-width: 1920px;
   display: flex;
   justify-content: center;
@@ -357,9 +357,9 @@ nav a:hover {
 .signUp_wrapper {
   position: absolute;
   z-index: 100;
-  height: 100vh;
+  height: 100%;
   max-height: 940px;
-  width: 100vw;
+  width: 100%;
   max-width: 1920px;
   display: flex;
   justify-content: center;
