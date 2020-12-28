@@ -55,4 +55,4 @@ const fillCatalog = () => {
     })
 
 }
-//fillCatalog()
+fillCatalog()
