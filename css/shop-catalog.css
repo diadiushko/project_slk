@@ -1,3 +1,21 @@
+.filter_container {
+    position: relative;
+    height: 30px;
+    width: 600px;
+    margin: 40px auto 0;
+    overflow: hidden;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: .8s ease-in-out;
+}
+
 .catalog_title {
     display: flex;
     justify-content: center;
@@ -10,7 +28,9 @@
     font-family: "Kaushan Script", sans-serif;
     font-size: 72px;
     font-weight: 400;
-    padding: 0 50px;
+    text-align: center;
+    display: block;
+    width: 500px;
 }
 
 .catalog_title span:after {
@@ -33,7 +53,8 @@
 
 .catalog_title button {
     margin-top: 40px;
-    height: min-content;
+    height: 30px;
+    width: 30px;
     background: none;
     cursor: pointer;
     transition: .1s linear;
@@ -41,36 +62,37 @@
 }
 
 .catalog_title button:first-child:hover {
-    transform: translate(-4px, 0);
+    transform: translate(-2px, 0);
 
 }
 
 .catalog_title button:last-child:hover {
-    transform: translate(4px, 0);
+    transform: translate(2px, 0);
 }
 
 /* catalog filter */
-.fitler {
+/* .filter {
     display: flex;
     justify-content: space-between;
     margin: 40px auto 0;
     max-width: 600px;
-}
+} */
 
-.fitler button {
+.filter button {
     font-size: 24px;
     background: none;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
 }
 
-.fitler button:hover {
+.filter button:hover {
     color: #070EBE;
     cursor: pointer;
     text-decoration: underline;
 }
 
 /* catalog */
+
 .catalog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,11 +177,11 @@
         padding: 0 15px;
     }
 
-    .fitler {
+    .filter {
         flex-direction: column;
     }
 
-    .fitler button {
+    .filter button {
         margin-top: 15px;
     }
 
