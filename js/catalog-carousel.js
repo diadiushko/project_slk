@@ -3,6 +3,13 @@ const leftArrow = document.querySelector('.catalog_title :first-child');
 const rightArrow = document.querySelector('.catalog_title button:last-child');
 
 const titles = [{
+    name: 'Consumables',
+    filters: [
+        'buffs',
+        'kibble',
+        'custom'
+    ]
+}, {
     name: 'Dinosaurs',
     filters: [
         'flyers',
@@ -38,17 +45,10 @@ const titles = [{
         'beta',
         'gamma'
     ]
-}, {
-    name: 'Consumables',
-    filters: [
-        'buffs',
-        'kibble',
-        'custom'
-    ]
 }]
 
 function filterFill(array) {
-    array.forEach(element => {
+    array.forEach(() => {
         filterContainer.innerHTML += '<div class="filter"></div>';
     });
 
@@ -67,38 +67,70 @@ filterFill(titles);
 
 function draw() {
     firstPos = document.querySelector('.filter_container :first-child');
-    secondPos = document.querySelector('.filter_container> :nth-child(2)');
+    mainPos = document.querySelector('.filter_container> :nth-child(2)');
+    lastPos = document.querySelector('.filter_container> :nth-child(3)');
+    endPos = document.querySelector('.filter_container> :last-child');
     firstPos.style.display = 'flex';
-    secondPos.style.display = 'flex';
-    firstPos.style.left = '0';
-    secondPos.style.left = '600px';
+    mainPos.style.display = 'flex';
+    lastPos.style.display = 'flex';
+    firstPos.style.left = '-600px';
+    mainPos.style.left = '0';
+    lastPos.style.left = '600px';
 }
 
 draw();
 
-step = 0;
+let step = 1;
 
 function left() {
     rightArrow.removeEventListener('click', left)
-    firstPos.style.left = '-600px';
-    secondPos.style.left = '0';
+    mainPos.style.left = '-600px';
+    lastPos.style.left = '0';
+
     setTimeout(() => {
         filterContainer.innerHTML += `<div class="filter">${firstPos.innerHTML}</div>`;
         filters = document.querySelectorAll('.filter');
         filters[0].remove();
         filters[filters.length - 1].style.display = 'none';
         draw();
-        rightArrow.addEventListener('click', left)
+        rightArrow.addEventListener('click', left);
     }, 800)
-    step++;
 
     let title = () => {
         if (step === filters.length - 1) {
             step = 0;
-            return titles[0].name;
+            return titles[step].name;
         } else return titles[step].name
     }
+    step++;
+    document.querySelector('.catalog_title>span').innerHTML = title();
+}
+
+function right() {
+    leftArrow.removeEventListener('click', right)
+    firstPos.style.left = '0'
+    mainPos.style.left = '600px';
+    lastPos.style.display = 'none';
+    lastPos.style.left = '0';
+
+    setTimeout(() => {
+        filterContainer.innerHTML = `<div class="filter">${endPos.innerHTML}</div>` + filterContainer.innerHTML;
+        filters = document.querySelectorAll('.filter');
+        filters[filters.length - 1].remove();
+        filters[0].style.display = 'none';
+        draw();
+        leftArrow.addEventListener('click', right);
+    }, 800)
+
+    let title = () => {
+        if (step === 0) {
+            step = titles.length;
+            return titles[0].name;
+        } else return titles[step].name;
+    }
+    step--;
     document.querySelector('.catalog_title>span').innerHTML = title();
 }
 
 rightArrow.addEventListener('click', left)
+leftArrow.addEventListener('click', right)
