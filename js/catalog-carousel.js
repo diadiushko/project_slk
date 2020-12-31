@@ -95,14 +95,14 @@ function left() {
         draw();
         rightArrow.addEventListener('click', left);
     }, 800)
-
+    console.log(step)
+    step++;
     let title = () => {
         if (step === filters.length - 1) {
             step = 0;
             return titles[step].name;
         } else return titles[step].name
     }
-    step++;
     document.querySelector('.catalog_title>span').innerHTML = title();
 }
 
@@ -121,14 +121,15 @@ function right() {
         draw();
         leftArrow.addEventListener('click', right);
     }, 800)
-
+    console.log(step)
+    
     let title = () => {
         if (step === 0) {
-            step = titles.length;
-            return titles[0].name;
-        } else return titles[step].name;
+            step = titles.length - 1;
+            return titles[titles.length - 1].name;
+        } else return titles[--step].name;
+
     }
-    step--;
     document.querySelector('.catalog_title>span').innerHTML = title();
 }
 
